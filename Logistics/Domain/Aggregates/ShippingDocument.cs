@@ -18,8 +18,6 @@ namespace Domain
         #region PublicMethods
         public ShippingDocument(){  }
         public void Delete() { }//Cascade
-        public void GetPackageStatus() { }
-        public void ChangePackageStatus(Statuses newStatus) { Package.ChangePackageStatus(newStatus); }
         #endregion
     }
     

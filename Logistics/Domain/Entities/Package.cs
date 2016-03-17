@@ -24,20 +24,4 @@ namespace Domain
         public void ReportData() { }
         #endregion
     }
-    public class Report
-    {
-        #region Properties
-        public DateTime DateFrom { get; set; }
-        public DateTime DateTo { get; set; }
-        public List<OrderDocument> ListOfOrders { get; set; }
-        public List<ShippingDocument> ListOfShippingDocuments { get; set; }
-        #endregion
-
-        #region PublicMethods
-        public void Generate() { }
-        public void Save() { }
-        public void Print() { }
-        public void Delete() { }
-        #endregion
-    }
 }
