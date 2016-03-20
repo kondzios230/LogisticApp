@@ -49,9 +49,17 @@
     <Compile Include="Services\ShippingDocumentService.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CommonComponents\CommonComponents.csproj">
+      <Project>{0815aa22-e00f-4f62-9737-e85387220fce}</Project>
+      <Name>CommonComponents</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Domain\Domain.csproj">
       <Project>{99f8e93f-828b-42c3-bd14-5f61eb387c7d}</Project>
       <Name>Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logistics\Infrastructure.csproj">
+      <Project>{6b44cb26-681e-473b-8a44-75af0717ade1}</Project>
+      <Name>Infrastructure</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
