@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using Logistics.Application.Interfaces;
-using Logistics.Domain.Entities.Repositories;
+using Logistics.Domain.Aggregates.Report.Repositories;
 using Logistics.Infrastructure.Repositories;
-using Logistics.Domain.Entities;
+using Logistics.Domain.Aggregates.Report;
 
 namespace Logistics.Application.Services
 {

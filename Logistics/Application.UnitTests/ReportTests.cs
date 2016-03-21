@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
-using Logistics.Domain.Entities.Repositories;
+using Logistics.Domain.Aggregates.Report.Repositories;
 using Logistics.Application.Services;
 namespace Tests.Application.UnitTests
 {

@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Logistics.Domain.Entities;
+using Logistics.Domain.ValueObjects;
 
-namespace Logistics.Domain.ValueObjects
+namespace Logistics.Domain.Aggregates.OrderDocument
 {
     public class OrderDocument
     {
@@ -13,7 +13,7 @@ namespace Logistics.Domain.ValueObjects
         public Shipment ShippingType { get; set; }
         public Client Client { get; set; }
         public List<string> Goods { get; set; }
-        public Package Package { get; set; }
+        public Package.Package Package { get; set; }
         #endregion
 
         #region PublicMethods

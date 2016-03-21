@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using Logistics.Domain;
-using Logistics.Domain.ValueObjects.Repositories;
 using Logistics.Domain.ValueObjects;
+using Logistics.Domain.Aggregates.OrderDocument;
+using Logistics.Domain.Aggregates.OrderDocument.Repositories;
 
 namespace Logistics.Infrastructure.Repositories
 {

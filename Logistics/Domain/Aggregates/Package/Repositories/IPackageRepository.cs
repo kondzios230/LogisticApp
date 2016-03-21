@@ -1,6 +1,6 @@
 ﻿using Logistics.CommonComponents;
 
-namespace Logistics.Domain.Entities.Repositories
+namespace Logistics.Domain.Aggregates.Package.Repositories
 {
     public interface IPackageRepository : IGenericRepository<Package>
     {

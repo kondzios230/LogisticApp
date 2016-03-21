@@ -1,8 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Logistics.Domain.Aggregates.ShippingDocument.Repositories;
 using Logistics.Application.Services;
-using Logistics.Domain;
+using Logistics.Domain.ValueObjects;
 namespace Tests.Application.UnitTests
 {
     [TestClass]

@@ -1,7 +1,7 @@
 ﻿using Logistics.Application.Interfaces;
 using Logistics.Domain;
-using Logistics.Domain.Entities;
-using Logistics.Domain.Entities.Repositories;
+using Logistics.Domain.Aggregates.Package;
+using Logistics.Domain.Aggregates.Package.Repositories;
 using Logistics.Domain.ValueObjects;
 using System;
 using System.Collections.Generic;

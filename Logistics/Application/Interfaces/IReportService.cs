@@ -1,4 +1,4 @@
-﻿using Logistics.Domain.Entities;
+﻿using Logistics.Domain.Aggregates.Report;
 using System.Collections.Generic;
 
 namespace Logistics.Application.Interfaces

@@ -1,7 +1,7 @@
 ﻿using System;
 using Logistics.Domain.ValueObjects;
 
-namespace Logistics.Domain.Entities
+namespace Logistics.Domain.Aggregates.Package
 {
     public class Package
     {

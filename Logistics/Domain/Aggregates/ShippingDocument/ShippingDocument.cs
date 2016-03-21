@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Logistics.Domain.ValueObjects;
-using Logistics.Domain.Entities;
 
 namespace Logistics.Domain.Aggregates.ShippingDocument
 {
@@ -11,8 +10,8 @@ namespace Logistics.Domain.Aggregates.ShippingDocument
         public int ID { get; set; }
         public string ShippingDocumentNumber { get; set; }
         public Person Operator { get; set; }
-        public List<Package> ListOfPackages { get; set; }
-        public OrderDocument OrderDocument { get; set; }
+        public List<Package.Package> ListOfPackages { get; set; }
+        public OrderDocument.OrderDocument OrderDocument { get; set; }
         #endregion
 
         #region PublicMethods

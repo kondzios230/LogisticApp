@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Logistics.Domain.Entities;
+using Logistics.Domain.Aggregates.Package;
 using Logistics.Domain.ValueObjects;
 
 namespace Logistics.Application.Interfaces

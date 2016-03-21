@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Logistics.Domain.Entities;
-using Logistics.Domain.Entities.Repositories;
+using Logistics.Domain.Aggregates.Report;
+using Logistics.Domain.Aggregates.Report.Repositories;
 
 namespace Logistics.Infrastructure.Repositories
 {
