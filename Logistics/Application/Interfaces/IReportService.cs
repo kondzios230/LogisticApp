@@ -1,11 +1,7 @@
-﻿using Domain.Entities;
-using System;
+﻿using Logistics.Domain.Entities;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Application.Interfaces
+namespace Logistics.Application.Interfaces
 {
     interface IReportService
     {

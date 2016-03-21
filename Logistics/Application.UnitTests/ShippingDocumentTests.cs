@@ -1,9 +1,9 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
-using Domain.Aggregates.ShippingDocument.Repositories;
-using Application.Services;
-namespace Application.UnitTests
+using Logistics.Domain.Aggregates.ShippingDocument.Repositories;
+using Logistics.Application.Services;
+namespace Tests.Application.UnitTests
 {
     [TestClass]
     public class ShippingDocumentTests

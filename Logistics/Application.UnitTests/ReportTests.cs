@@ -1,9 +1,9 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
-using Domain.Entities.Repositories;
-using Application.Services;
-namespace Application.UnitTests
+using Logistics.Domain.Entities.Repositories;
+using Logistics.Application.Services;
+namespace Tests.Application.UnitTests
 {
     [TestClass]
     public class ReportTests

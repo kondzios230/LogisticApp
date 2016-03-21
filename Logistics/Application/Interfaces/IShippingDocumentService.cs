@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Domain.Aggregates.ShippingDocument;
-namespace Application.Interfaces
+﻿using System.Collections.Generic;
+using Logistics.Domain.Aggregates.ShippingDocument;
+
+namespace Logistics.Application.Interfaces
 {
     interface IShippingDocumentService
     {

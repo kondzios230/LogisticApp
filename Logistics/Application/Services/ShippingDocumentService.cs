@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Application.Interfaces;
-using Infrastructure.Repositories;
-using Domain.Aggregates.ShippingDocument.Repositories;
-using Domain.Aggregates.ShippingDocument;
-namespace Application.Services
+﻿using System.Collections.Generic;
+using Logistics.Application.Interfaces;
+using Logistics.Infrastructure.Repositories;
+using Logistics.Domain.Aggregates.ShippingDocument.Repositories;
+using Logistics.Domain.Aggregates.ShippingDocument;
+
+namespace Logistics.Application.Services
 {
     public class ShippingDocumentService : IShippingDocumentService
     {

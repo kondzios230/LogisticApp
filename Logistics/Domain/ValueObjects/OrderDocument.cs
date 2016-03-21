@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Domain.Entities;
-namespace Domain.ValueObjects
+using Logistics.Domain.Entities;
+
+namespace Logistics.Domain.ValueObjects
 {
     public class OrderDocument
     {

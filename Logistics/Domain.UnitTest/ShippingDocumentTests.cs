@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ObjectMothers;
-namespace Domain.UnitTest
+using Tests.ObjectMothers;
+namespace Tests.Domain.UnitTest
 {
     [TestClass]
     public class ShippingDocumentTests

@@ -1,17 +1,13 @@
-﻿using Application.Interfaces;
-using Domain;
-using Domain.Aggregates.ShippingDocument.Repositories;
-using Domain.Entities;
-using Domain.Entities.Repositories;
-using Domain.ValueObjects;
+﻿using Logistics.Application.Interfaces;
+using Logistics.Domain;
+using Logistics.Domain.Entities;
+using Logistics.Domain.Entities.Repositories;
+using Logistics.Domain.ValueObjects;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Infrastructure.Repositories;
+using Logistics.Infrastructure.Repositories;
 
-namespace Application.Services
+namespace Logistics.Application.Services
 {
     public class PackageService : IPackageService
     {

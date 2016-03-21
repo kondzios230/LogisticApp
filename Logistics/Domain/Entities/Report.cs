@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Domain.ValueObjects;
-using Domain.Aggregates.ShippingDocument;
-namespace Domain.Entities
+using Logistics.Domain.ValueObjects;
+using Logistics.Domain.Aggregates.ShippingDocument;
+namespace Logistics.Domain.Entities
 {
 
     public class Report

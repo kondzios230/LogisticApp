@@ -1,14 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Domain;
-using CommonComponents;
-using Domain.ValueObjects.Repositories;
-using Domain.ValueObjects;
-using Domain.Entities;
-namespace Infrastructure.Repositories
+using Logistics.Domain;
+using Logistics.Domain.ValueObjects.Repositories;
+using Logistics.Domain.ValueObjects;
+
+namespace Logistics.Infrastructure.Repositories
 {
     public class OrderDocumentMem : IOrderDocumentRepository
     {

@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Application.Interfaces;
-using Domain.Entities.Repositories;
-using Infrastructure.Repositories;
-using Domain.Entities;
-namespace Application.Services
+using Logistics.Application.Interfaces;
+using Logistics.Domain.Entities.Repositories;
+using Logistics.Infrastructure.Repositories;
+using Logistics.Domain.Entities;
+
+namespace Logistics.Application.Services
 {
     public class ReportService : IReportService
     {

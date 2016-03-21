@@ -1,16 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Domain;
-using CommonComponents;
-using Domain.Aggregates.ShippingDocument.Repositories;
-using Domain.Aggregates.ShippingDocument;
-using Domain.ValueObjects;
-using Domain.Entities;
-using Domain.Entities.Repositories;
-namespace Infrastructure.Repositories
+using Logistics.Domain.Entities;
+using Logistics.Domain.Entities.Repositories;
+
+namespace Logistics.Infrastructure.Repositories
 {
     public class ReportMem : IReportRepository
     {

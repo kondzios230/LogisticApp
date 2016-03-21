@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Domain.ValueObjects;
-using Domain.Entities;
+using Logistics.Domain.ValueObjects;
+using Logistics.Domain.Entities;
 
-namespace Domain.Aggregates.ShippingDocument
+namespace Logistics.Domain.Aggregates.ShippingDocument
 {
     public class ShippingDocument
     {
