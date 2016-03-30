@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using Logistics.Domain.Aggregates.Package;
-using Logistics.Domain.ValueObjects;
 
 namespace Logistics.Application.Interfaces
 {
@@ -9,7 +8,7 @@ namespace Logistics.Application.Interfaces
         Package Create();
         void Pack(Package package);
         void PrepareToSend(Package package);
-        void Send(Package package,Person courier);
+        void Send(Package package,Courier courier);
         Package Find(int id);
         List<Package> FindAll();
     }

@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Logistics.Domain.Aggregates.ShippingDocument.Repositories;
-using Logistics.Domain.ValueObjects;
 using Logistics.Domain.Aggregates.ShippingDocument;
 using Logistics.Domain.Aggregates.Package;
 
@@ -17,25 +16,25 @@ namespace Logistics.Infrastructure.Repositories
             posts = new List<ShippingDocument>
             {
                 new ShippingDocument {  ID = 1,
-                                        Operator = new Person() {FirstName="Adam",LastName="Słodowy" },
+                                        Operator = new Operator() {FirstName="Adam",LastName="Słodowy" },
                                         OrderDocument =  orders.Find(1),
                                         ListOfPackages = new List<Package>() { packages.Find(1) },
                                         ShippingDocumentNumber ="DOC/1"
                                      } ,
                 new ShippingDocument {  ID=2,
-                                        Operator = new Person() {FirstName="Jan",LastName="Kowalski" },
+                                        Operator = new Operator() {FirstName="Jan",LastName="Kowalski" },
                                         OrderDocument = orders.Find(2),
                                          ListOfPackages = new List<Package>() { packages.Find(2) },
                                         ShippingDocumentNumber ="DOC/2"
                                      },
                  new ShippingDocument { ID=3,
-                                        Operator = new Person() {FirstName="Ewa",LastName="Kowalska" },
+                                        Operator = new Operator() {FirstName="Ewa",LastName="Kowalska" },
                                         OrderDocument =orders.Find(3) ,
                                          ListOfPackages = new List<Package>() { packages.Find(3) },
                                         ShippingDocumentNumber ="DOC/3"
                                      },
                  new ShippingDocument { ID=4,
-                                        Operator = new Person() {FirstName="Konrad",LastName="Dymek" },
+                                        Operator = new Operator() {FirstName="Konrad",LastName="Dymek" },
                                         OrderDocument = orders.Find(4),
                                          ListOfPackages = new List<Package>() { packages.Find(4) },
                                         ShippingDocumentNumber ="DOC/4"

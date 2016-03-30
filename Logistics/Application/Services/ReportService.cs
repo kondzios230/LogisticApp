@@ -1,31 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using Logistics.Application.Interfaces;
-using Logistics.Domain.Aggregates.Report.Repositories;
-using Logistics.Infrastructure.Repositories;
-using Logistics.Domain.Aggregates.Report;
+using Logistics.Domain.Aggregates.OrderDocument;
+using Logistics.Domain.Aggregates.Package;
+using Logistics.Domain.Aggregates.ShippingDocument;
 
 namespace Logistics.Application.Services
 {
     public class ReportService : IReportService
     {
-        private IReportRepository reportRepository;
-
-
-        public ReportService()
-        {
-            reportRepository = new ReportMem();
-        }
-
-        public ReportService(IReportRepository reportRepository)
-        {
-            this.reportRepository = reportRepository;
-        }
+        
              
         public Report Generate()
         {
             var report = new Report();
-            reportRepository.Insert(report);
             return report;
         }
 
@@ -40,20 +28,24 @@ namespace Logistics.Application.Services
             throw new NotImplementedException();
         }
 
-        public void Delete(Report entity)
-        {
-            reportRepository.Delete(entity);
-        }
+       
 
-        public Report Find(int id)
-        {
-           return  reportRepository.Find(id);
-        }
+    
+    }
 
-        public List<Report> FindAll()
-        {
-            return reportRepository.FindAll();
-        }
+    public class Report
+    {
+        #region Properties
+        public int ID { get; set; }
+        public DateTime DateFrom { get; set; }
+        public DateTime DateTo { get; set; }
+        public List<OrderDocument> ListOfOrders { get; set; }
+        public List<Package> ListOfPackages { get; set; }
+        public List<ShippingDocument> ListOfShippingDocuments { get; set; }
+        public bool WasPrinted { get; set; }
+        #endregion
+
+       
     }
 
 }

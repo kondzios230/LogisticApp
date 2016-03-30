@@ -40,18 +40,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Aggregates\Report\Report.cs" />
-    <Compile Include="Aggregates\Report\Repositories\IReportRepository.cs" />
+    <Compile Include="Aggregates\OrderDocument\OrderClient.cs" />
+    <Compile Include="Aggregates\Package\Courier.cs" />
+    <Compile Include="Aggregates\Package\Enums.cs" />
     <Compile Include="Aggregates\OrderDocument\Repositories\IOrderDocumentRepository.cs" />
     <Compile Include="Aggregates\Package\Repositories\IPackageRepository.cs" />
+    <Compile Include="Aggregates\ShippingDocument\Operator.cs" />
+    <Compile Include="Aggregates\ShippingDocument\ShippingClient.cs" />
     <Compile Include="Aggregates\ShippingDocument\Repositories\IShippingDocumentRepository.cs" />
     <Compile Include="Aggregates\Package\Package.cs" />
     <Compile Include="Aggregates\OrderDocument\OrderDocument.cs" />
-    <Compile Include="ValueObjects\Person.cs" />
     <Compile Include="Aggregates\ShippingDocument\ShippingDocument.cs" />
-    <Compile Include="ValueObjects\Enums.cs" />
+    <Compile Include="Aggregates\OrderDocument\Enums.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ValueObjects\Client.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CommonComponents\CommonComponents.csproj">
@@ -59,7 +60,9 @@
       <Name>CommonComponents</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="ValueObjects\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

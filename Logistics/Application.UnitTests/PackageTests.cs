@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Logistics.Application.Services;
-using Logistics.Domain.ValueObjects;
+using Logistics.Domain.Aggregates.Package;
 namespace Tests.Application.UnitTests
 {
     [TestClass]
@@ -55,7 +55,7 @@ namespace Tests.Application.UnitTests
 
             // Act
             var package = service.Create();
-            service.Send(package,new Logistics.Domain.ValueObjects.Person());
+            service.Send(package,new Logistics.Domain.Aggregates.Package.Courier());
 
             // Assert
             Assert.AreEqual(package.Status, Statuses.SENT);
@@ -69,7 +69,7 @@ namespace Tests.Application.UnitTests
 
             // Act
             var package = service.Create();
-            service.Send(package, new Logistics.Domain.ValueObjects.Person());
+            service.Send(package, new Logistics.Domain.Aggregates.Package.Courier());
             var dt = DateTime.Now;
 
             // Assert
@@ -84,7 +84,7 @@ namespace Tests.Application.UnitTests
 
             // Act
             var package = service.Create();
-            var courier = new Logistics.Domain.ValueObjects.Person();
+            var courier = new Logistics.Domain.Aggregates.Package.Courier();
             service.Send(package,courier);
 
             // Assert

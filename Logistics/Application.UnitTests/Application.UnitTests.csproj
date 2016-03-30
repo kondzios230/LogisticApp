@@ -59,7 +59,6 @@
     <Compile Include="ShippingDocumentTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PackageTests.cs" />
-    <Compile Include="ReportTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -11,5 +11,7 @@ namespace Logistics.CommonComponents
         T Find(int id);
 
         List<T> FindAll();
+        //VO do agregatu
+        //Report service w app zamias rep w domain
     }
 }

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using Logistics.Domain.ValueObjects;
 
 namespace Logistics.Domain.Aggregates.OrderDocument
 {
@@ -11,7 +10,7 @@ namespace Logistics.Domain.Aggregates.OrderDocument
         public string OrderDocumentNumber { get; set; }
         public DateTime OrderDate { get; set; }
         public Shipment ShippingType { get; set; }
-        public Client Client { get; set; }
+        public OrderClient Client { get; set; }
         public List<string> Goods { get; set; }
         public Package.Package Package { get; set; }
         #endregion

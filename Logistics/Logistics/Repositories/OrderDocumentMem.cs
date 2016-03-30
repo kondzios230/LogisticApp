@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Logistics.Domain;
-using Logistics.Domain.ValueObjects;
 using Logistics.Domain.Aggregates.OrderDocument;
 using Logistics.Domain.Aggregates.OrderDocument.Repositories;
 
@@ -18,7 +16,7 @@ namespace Logistics.Infrastructure.Repositories
             {
                 new OrderDocument(){
                     ID =1,
-                                                                            Client = new Client(){FirstName="Prezes",LastName="Prezes",EMail="prezes@man.pl" },
+                                                                            Client = new OrderClient(){FirstName="Prezes",LastName="Prezes",EMail="prezes@man.pl" },
                                                                             Goods= new List<string>() {
                                                                                 "Towar 11",
                                                                                 "Towar 21",
@@ -31,7 +29,7 @@ namespace Logistics.Infrastructure.Repositories
                                                                             }
                 ,new OrderDocument(){
                     ID=2,
-                                                                            Client = new Client(){FirstName="Man",LastName="Dude",EMail="dude@man.pl" },
+                                                                            Client = new OrderClient(){FirstName="Man",LastName="Dude",EMail="dude@man.pl" },
                                                                             Goods= new List<string>() {
                                                                                 "Towar 11",
                                                                                 "Towar 22",
@@ -44,7 +42,7 @@ namespace Logistics.Infrastructure.Repositories
                                                                             }
                 ,new OrderDocument(){
                     ID=3,
-                                                                            Client = new Client() {FirstName="XY",LastName="ZX",EMail="email@post.pl" },
+                                                                            Client = new OrderClient() {FirstName="XY",LastName="ZX",EMail="email@post.pl" },
                                                                             Goods= new List<string>() {
                                                                                 "Towar 5",
                                                                                 "Towar 6",
@@ -57,7 +55,7 @@ namespace Logistics.Infrastructure.Repositories
                                                                             }
     ,new OrderDocument() {
         ID=4,
-                                                                                Client = new Client(){FirstName="Ixinski",LastName="Prezes",EMail="Prezes@post.pl" },
+                                                                                Client = new OrderClient(){FirstName="Ixinski",LastName="Prezes",EMail="Prezes@post.pl" },
                                                                                 Goods= new List<string>() {
                                                                                     "Towar 1",
                                                                                     "Towar 2",

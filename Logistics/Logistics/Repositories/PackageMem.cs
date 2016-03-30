@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Logistics.Domain;
-using Logistics.Domain.ValueObjects;
 using Logistics.Domain.Aggregates.Package;
 using Logistics.Domain.Aggregates.Package.Repositories;
 
@@ -31,14 +29,14 @@ namespace Logistics.Infrastructure.Repositories
                                         { ID=3,
                                             Number="PCG/3",
                                             Status=Statuses.SENT,
-                                            Courier = new Person() {FirstName = "Kurier", LastName = "Kurierewicz" },
+                                            Courier = new Courier() {FirstName = "Kurier", LastName = "Kurierewicz" },
                                             SendDate = DateTime.Now
                                         },
                new Package ()
                                         { ID=4,
                                             Number="PCG/4",
                                             Status=Statuses.SENT,
-                                            Courier = new Person() {FirstName = "Kurier", LastName = "Kurierewicz" },
+                                            Courier = new Courier() {FirstName = "Kurier", LastName = "Kurierewicz" },
                                             SendDate = DateTime.Now
                }
             };

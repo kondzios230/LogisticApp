@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using Logistics.Domain.Aggregates.ShippingDocument;
-using Logistics.Domain.ValueObjects;
 using Logistics.Domain.Aggregates.OrderDocument;
 using Logistics.Domain.Aggregates.Package;
 using Logistics.Domain;
@@ -21,11 +20,11 @@ namespace Tests.ObjectMothers
             ShippingDocument p = new ShippingDocument
             {
                 ID = 4,
-                Operator = new Person() { FirstName = "Konrad", LastName = "Dymek" },
+                Operator = new Operator() { FirstName = "Konrad", LastName = "Dymek" },
                 OrderDocument = new OrderDocument()
                 {
                     ID = 1,
-                    Client = new Client() { FirstName = "Prezes", LastName = "Prezes", EMail = "prezes@man.pl" },
+                    Client = new OrderClient() { FirstName = "Prezes", LastName = "Prezes", EMail = "prezes@man.pl" },
                     Goods = new List<string>() { "Towar 11" },
                     OrderDate = DateTime.Now,
                     OrderDocumentNumber = "ORD/4",

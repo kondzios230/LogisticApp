@@ -2,7 +2,6 @@
 using Logistics.Domain;
 using Logistics.Domain.Aggregates.Package;
 using Logistics.Domain.Aggregates.Package.Repositories;
-using Logistics.Domain.ValueObjects;
 using System;
 using System.Collections.Generic;
 using Logistics.Infrastructure.Repositories;
@@ -31,7 +30,7 @@ namespace Logistics.Application.Services
 
         public void Pack(Package package) { package.Status=Statuses.PACKED; }
         public void PrepareToSend(Package package) { package.Status=Statuses.READYTOSHIP;package.StickerPrinted = true; }
-        public void Send(Package package,Person courier) {
+        public void Send(Package package,Courier courier) {
             package.Status=Statuses.SENT;
             package.SendDate = DateTime.Now;
             package.Courier = courier;

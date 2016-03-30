@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Logistics.Domain.ValueObjects;
+using Logistics.Domain.Aggregates.Package;
 
 namespace Logistics.Domain.Aggregates.ShippingDocument
 {
@@ -9,7 +9,7 @@ namespace Logistics.Domain.Aggregates.ShippingDocument
         #region Properties
         public int ID { get; set; }
         public string ShippingDocumentNumber { get; set; }
-        public Person Operator { get; set; }
+        public Operator Operator { get; set; }
         public List<Package.Package> ListOfPackages { get; set; }
         public OrderDocument.OrderDocument OrderDocument { get; set; }
         #endregion

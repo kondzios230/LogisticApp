@@ -1,4 +1,4 @@
-﻿using Logistics.Domain.Aggregates.Report;
+﻿using Logistics.Application.Services;
 using System.Collections.Generic;
 
 namespace Logistics.Application.Interfaces
@@ -8,8 +8,5 @@ namespace Logistics.Application.Interfaces
         Report Generate();
         string Print(Report entity);
         void Save(Report entity);
-        void Delete(Report entity);
-        Report Find(int id);
-        List<Report> FindAll();
     }
 }

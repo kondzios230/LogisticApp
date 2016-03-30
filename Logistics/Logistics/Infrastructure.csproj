@@ -42,7 +42,6 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\OrderDocumentMem.cs" />
-    <Compile Include="Repositories\ReportMem.cs" />
     <Compile Include="Repositories\PackageMem.cs" />
     <Compile Include="Repositories\ShippingDocumentMem.cs" />
   </ItemGroup>
